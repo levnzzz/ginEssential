@@ -42,6 +42,5 @@ func AuthMiddleware() gin.HandlerFunc {
 		//用户存在，将 user 的信息写入上下文
 		ctx.Set("user", user)
 		ctx.Next()
-
 	}
 }
